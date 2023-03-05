@@ -76,7 +76,7 @@ $(document).ready(function() {
             img = imgs[i];
 
             link.innerText = link.innerHTML = name_kill_death[i][0];
-            point.innerText = point.innerHTML = name_kill_death[i][1];
+            point.innerText = point.innerHTML = name_kill_death[i][1 + w];
             img.src = "/static/profile/" + name_kill_death[i][0] + ".png";
             
         }
