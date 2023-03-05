@@ -1,3 +1,14 @@
+/*
+The path of war went cold after General Velosilious's attack and members of the galatic fraternity of Delta Psi spent
+their time living in peace until everything changed on a fateful February 15th 2023 BC when Khalifa Omar Al-Dahleh broke
+the peace and incited war against Thomas Mitchell Cobley III of Manchester. After that peace was never an option and the 
+rest is history.
+The path of war went cold after General Velosilious's attack and members of the galatic fraternity of Delta Psi spent
+their time living in peace until everything changed on a fateful February 15th 2023 BC when Khalifa Omar Al-Dahleh broke
+the peace and incited war against Thomas Mitchell Cobley III of Manchester. After that peace was never an option and the 
+rest is history.
+*/
+
 LIMIT = 10;
 
 var name_kill_death = [["Kasra", 3, 0],
