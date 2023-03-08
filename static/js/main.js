@@ -11,7 +11,7 @@ rest is history.
 
 LIMIT = 10;
 
-var name_kill_death = [["Kasra", 2, 0],
+var name_kill_death = [["Kasra", 10, 0], // 2, 0
                         ["Teo", 3, 2],
                         ["Thiago", 1, 3],
                         ["Jennifer", 0, 3],
@@ -98,9 +98,14 @@ $(document).ready(function() {
             link.innerText = link.innerHTML = name_kill_death[i][0];
             point.innerText = point.innerHTML = name_kill_death[i][1 + w];
             img.src = "/static/profile/" + name_kill_death[i][0] + ".png";
-            
+
+            if (w == 0 && i == 1) {
+                point.innerText = point.innerHTML = "∞";
+                point.style.fontSize = "25px";
+            }
         }
     }
+
     document.documentElement.style.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
     count = 0;
