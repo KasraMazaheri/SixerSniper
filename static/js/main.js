@@ -11,12 +11,33 @@ rest is history.
 
 LIMIT = 10;
 
-var name_kill_death = [["Kasra", 3, 0],
-                        ["Teo", 1, 2],
-                        ["Thiago", 0, 1],
-                        ["Jennifer", 0, 2],
+var name_kill_death = [["Kasra", 2, 0],
+                        ["Teo", 3, 2],
+                        ["Thiago", 1, 3],
+                        ["Jennifer", 0, 3],
                         ["Angeles", 1, 0],
-                        ["Jad", 0, 0]];
+                        ["Jad", 1, 1],
+                        ["Catherine", 5, 4],
+                        ["Omar", 8, 3],
+                        ["Bilal", 2, 2],
+                        ["Jakob", 3, 1],
+                        ["Charis", 2, 1],
+                        ["Arusha", 2, 2],
+                        ["Firaol", 0, 1],
+                        ["Oscar", 1, 0],
+                        ["Natalia", 0, 2],
+                        ["Eesha", 1, 6],
+                        ["Sebastian D", 2, 2],
+                        ["Laura", 0, 1],
+                        ["Nour", 6, 1],
+                        ["Ola", 0, 2],
+                        ["Adan", 1, 1],
+                        ["Isa P", 1, 2],
+                        ["Pravi", 0, 1],
+                        ["Mariana", 1, 1],
+                        ["Cata", 0, 1],
+                        ["Durra", 0, 1],
+                        ["Sabrina", 0, 1]];
 
 
 // Sniper Leaderboard
@@ -66,7 +87,6 @@ $(document).ready(function() {
             rank.innerText = rank.innerHTML = i + 5;
         }
 
-        console.log("LOLZ");
         links = wrappers[w].getElementsByClassName("link");
         points = wrappers[w].getElementsByClassName("points");
         imgs = wrappers[w].getElementsByTagName("img");
@@ -81,5 +101,10 @@ $(document).ready(function() {
             
         }
     }
-    
+    document.documentElement.style.width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+    count = 0;
+    for (var i = 0; i < name_kill_death.length; i ++)
+        count += name_kill_death[i][1];
+    console.log(count);
  });
